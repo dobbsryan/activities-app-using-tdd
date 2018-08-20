@@ -1,0 +1,55 @@
+.table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+
+    th, td {
+        @apply .text-left;
+        //@apply .p-4;
+        //white-space: nowrap;
+        word-wrap:break-word;
+    }
+
+    th {
+        @apply .font-medium;
+        @apply .border-b-2;
+        @apply .p-4;
+    }
+
+    // NOTE: table is styled for inputs to take up
+    //       all space within td
+    td {
+        @apply .border-t;
+        vertical-align: middle;
+        /*vertical-align: top;*/
+        /*@apply .h-8;*/
+        @apply .p-0;
+
+        input, textarea {
+            @apply .w-full;
+            @apply .p-4;
+            @apply .border-none;
+            @apply .resize-none;
+        }
+    }
+}
+
+.table-standard {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+
+    th {
+        @apply .font-medium;
+        @apply .border-b-2;
+    }
+
+    th, td {
+        @apply .text-left;
+        @apply .p-4;
+        //white-space: nowrap;
+        word-wrap:break-word;
+        vertical-align: top;
+    }
+    
+}
